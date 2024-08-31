@@ -1,6 +1,7 @@
 import express from "express";
 import bodyParser from "body-parser";
 import { ApolloServer } from "@apollo/server";
+import cors from 'cors'
 import { expressMiddleware } from "@apollo/server/express4";
 import { prismaClient } from "../clients/db";
 import { User } from "./user";
@@ -10,6 +11,7 @@ export async function initserver() {
 
   app.use(bodyParser.json());
   
+  app.use(cors());
 
 
   const garphqlServer = new ApolloServer({

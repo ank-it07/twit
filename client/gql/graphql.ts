@@ -40,6 +40,7 @@ export type VerifyUserGoogleTokenQueryVariables = Exact<{
 }>;
 
 
+
 export type VerifyUserGoogleTokenQuery = { __typename?: 'Query', verifyGoogleToken?: string | null };
 
 

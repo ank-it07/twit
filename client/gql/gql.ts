@@ -28,7 +28,7 @@ const documents = {
  * The query argument is unknown!
  * Please regenerate the types.
  */
-export function graphql(source: string): unknown;
+export function graphql(source: string): any;
 
 /**
  * The graphql function is used to parse GraphQL queries into a document that can be used by GraphQL clients.
